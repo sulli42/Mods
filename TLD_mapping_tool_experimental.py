@@ -76,8 +76,8 @@ def contourPlot(data, path, save=True):
     yi = linspace(min(data[:,2]),max(data[:,2]),400)
     zi = griddata(data[:,0],data[:,2],data[:,1], xi,yi, interp='linear') 
     #zi = nd.gaussian_filter(zi, sigma=0.6, order=0)
-    plt.contour (xi,yi,zi,7,linewidths=0.5,colors='saddlebrown') 
-    plt.contourf(xi,yi,zi,14,);
+    plt.contour (xi,yi,zi,8,linewidths=0.5,colors='saddlebrown') 
+    plt.contourf(xi,yi,zi,12,);
     plt.colorbar()  
     plt.grid(False)
     plt.set_cmap('terrain')
