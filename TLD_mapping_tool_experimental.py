@@ -79,7 +79,7 @@ def contourPlot(data, path, save=True):
     plt.contour (xi,yi,zi,5,linewidths=0.5,colors='saddlebrown') 
     plt.contourf(xi,yi,zi,12,);
     plt.colorbar()  
-    plt.grid(False)
+    plt.grid(True)
     plt.set_cmap('terrain')
     if(save):
         plt.savefig(path + "TM_map_contour.png",dpi=150)
