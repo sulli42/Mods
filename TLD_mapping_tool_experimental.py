@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 from numpy import linspace, meshgrid
 from matplotlib.mlab import griddata
 from pylab import rcParams
-rcParams['figure.figsize'] = 12,9.5
+rcParams['figure.figsize'] = 24,19
 #import scipy.ndimage as nd
 
 
@@ -73,7 +73,7 @@ def deleteScreenshots(path):
 def contourPlot(data, path, save=True):
     fig = plt.figure()
     xi = linspace(min(data[:,0]),max(data[:,0]),400)
-    yi = linspace(min(data[:,0]),max(data[:,0]),400)
+    yi = linspace(min(data[:,2]),max(data[:,2]),400)
     zi = griddata(data[:,0],data[:,2],data[:,1], xi,yi, interp='linear') 
     #zi = nd.gaussian_filter(zi, sigma=0.6, order=0)
     plt.contour (xi,yi,zi,8,linewidths=0.5,colors='saddlebrown') 
