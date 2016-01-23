@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 from numpy import linspace, meshgrid
 from matplotlib.mlab import griddata
 from pylab import rcParams
-rcParams['figure.figsize'] = 24,19
+rcParams['figure.figsize'] = 12,9.5
 #import scipy.ndimage as nd
 
 
